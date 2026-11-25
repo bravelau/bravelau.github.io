@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>bravelau</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #14181f; --mute: #5d6673; --line: #e1e5eb; --accent: #2457c5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1319; --card: #171c24; --ink: #e8ecf2; --mute: #97a1b0; --line: #272e3a; --accent: #7aa2ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  .sub { color: var(--mute); margin: 0 0 32px; }
+  h2 { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--mute); margin: 0 0 10px; }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px;
+  }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+  a.card b { font-size: 18px; display: block; color: var(--accent); }
+  a.card span { color: var(--mute); font-size: 15px; }
+  a.card .go { display: inline-block; margin-top: 8px; color: var(--accent); font-size: 14px; font-weight: 600; }
+  footer { margin-top: 40px; color: var(--mute); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>bravelau</h1>
+  <p class="sub">Projects and daily reports.</p>
+
+  <h2>Reports</h2>
+  <a class="card" href="financial-crisis-early-warning/">
+    <b>Financial Crisis Early Warning</b>
+    <span>Daily dashboard of about 70 free public indicators across credit, markets, rates, shadow banking, the AI trade and the macro economy, with a regime reading, source updates and a risk news monitor.</span>
+    <span class="go">Open the dashboard &rarr;</span>
+  </a>
+
+  <footer>Reports are generated automatically from public data. Not investment advice.</footer>
+</div>
+</body>
+</html>
